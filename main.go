@@ -110,7 +110,7 @@ func startProcess(baseFile, targetsFile, projectName string, binaryFlag, metadat
 			reader := bufio.NewReader(os.Stdin)
 			input, err := reader.ReadString('\n')
 			if err != nil {
-				fmt.Println("An error occured while reading input. Please try again", err)
+				fmt.Println("An error occurred while reading input. Please try again", err)
 				os.Exit(1)
 			}
 			input = strings.TrimSuffix(input, "\n")
